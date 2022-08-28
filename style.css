@@ -1,11 +1,28 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap');
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
   }
 
+  a{
+    text-decoration: none;
+  }
+
+  :root {
+    --color-text: #f1f1f1;
+    --color-subtitle: #b8b8b8;
+    --color-highlight: rgba(226, 121, 45, 1);
+    --color-button: #4343e9;
+  }
+
+  body{
+    font-family: 'Poppins', sans-serif;
+    background: url(assets/background.jpg) no-repeat fixed center;
+    color: var(--color-text);
+  }
   .container{
-    max-width: 1440px;
+    padding: 20px;
   }
 
   header{
@@ -14,8 +31,100 @@
     align-items: center;
   }
 
+  header .logo img{
+    width: 30px;
+    height: 30px;
+  }
+
   header ul{
     display: flex;
     gap: 30px;
     list-style: none;
   }
+
+  header ul li {
+    font-size: 14px;
+    color: var(--color-text);
+  }
+
+  button {
+    border: none;
+    background-color: var(--color-button);
+    color: var(--color-text);
+    padding: 10px;
+    border-radius: 10px;
+    font-size: 14px;
+  }
+
+  button a{
+    color: var(--color-text);
+  }
+
+  main {
+    padding-top: 200px;
+  }
+
+  .top-main{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+
+  .top-main h3 {
+    padding-top: 30px;
+    color: var(--color-subtitle);
+    font-weight: 400;
+    font-size: 15px;
+  }
+
+  .bottom-main {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 50px;
+  }
+
+  .search {
+    background-color: var(--color-text);
+    border-radius: 15px;
+    width: 80%;
+    padding: 25px;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+label {
+  color: #000;
+}
+
+#locations, #hotel, #range {
+  display: flex;
+  flex-direction: column;
+}
+
+label {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+select {
+  display: flex;
+  align-items: center;
+  
+}
+
+.button-search {
+    padding-left: 20px;
+}
+
+button {
+  padding: 30px;
+  opacity: 0.7;
+}
+
+button img {
+  width: 30px;
+  height: 30px;
+}
