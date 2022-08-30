@@ -11,8 +11,8 @@
 
   :root {
     --color-text: #f1f1f1;
-    --color-subtitle: #b8b8b8;
-    --color-highlight: rgba(226, 121, 45, 1);
+    --color-subtitle: #dfd9d9;
+    --color-highlight: #e2792d;
     --color-button: #4343e9;
   }
 
@@ -45,22 +45,33 @@
     list-style: none;
   }
 
-  header ul li {
-    font-size: 14px;
+  header ul li{ 
+    font-size: 16px;
+  }
+
+  header ul li a{
+    text-decoration: none;
     color: var(--color-text);
+    transition: 0.5s;
+  }
+
+  header ul li a:hover {
+    color: var(--color-highlight);
+    border-bottom: 1px solid var(--color-button);
   }
 
   button {
     border: none;
     background-color: var(--color-button);
     color: var(--color-text);
-    padding: 20px;
+    padding: 10px 30px;
     border-radius: 10px;
-    font-size: 14px;
+    font-size: 16px;
   }
 
   button a{
     color: var(--color-text);
+    font-weight: 500;
   }
 
   main {
@@ -85,6 +96,12 @@
     font-size: 15px;
   }
 
+  .title h3 {
+    display: flex;
+    margin: 0 auto;
+    max-width: 50%;
+  }
+
   .bottom-main {
     display: flex;
     align-items: center;
@@ -94,6 +111,7 @@
 
   .search {
     background-color: var(--color-text);
+    opacity: 0.9;
     border-radius: 15px;
     width: 80%;
     padding: 25px;
@@ -111,15 +129,17 @@ label {
 }
 
 label {
+  padding-bottom: 5px;
   display: flex;
-  align-items: center;
-  justify-content: center;
+  align-items: flex-start;
 }
 
 select {
+  border: none;
   display: flex;
   align-items: center;
-  
+  justify-content: center;
+  height: 25px;
 }
 
 .button-search {
@@ -128,7 +148,11 @@ select {
 
 #button-search {
   padding: 30px;
-  opacity: 0.7;
+  opacity: 0.8;
+}
+
+button:hover {
+  cursor: pointer;
 }
 
 button img {
