@@ -18,12 +18,13 @@
 
   body{
     font-family: 'Poppins', sans-serif;
-    background: url(assets/background-2.jpg) no-repeat fixed center;
+    background: url(assets/background.jpg) no-repeat fixed center;
     background-size: cover;
     color: var(--color-text);
     max-width: 1080px;
     margin: 0 auto;
   }
+  
   .container{
     padding: 20px;
   }
@@ -37,6 +38,7 @@
   header .logo img{
     width: 50px;
     height: 50px;
+    filter: drop-shadow(30px 10px 4px rgba(0, 0, 0, 0.5));
   }
 
   header ul{
@@ -68,10 +70,15 @@
     border-radius: 10px;
     font-size: 16px;
   }
-
+  
   button a{
     color: var(--color-text);
     font-weight: 500;
+  }
+  
+  button:hover {
+    transition: 0.5s;
+    filter: drop-shadow(0px 2px 3px rgba(0, 0, 0, 0.5));
   }
 
   main {
@@ -99,7 +106,7 @@
   .title h3 {
     display: flex;
     margin: 0 auto;
-    max-width: 50%;
+    max-width: 65 %;
   }
 
   .bottom-main {
@@ -147,7 +154,7 @@ select {
 }
 
 #button-search {
-  padding: 30px;
+  padding: 35px;
   opacity: 0.8;
 }
 
@@ -158,4 +165,63 @@ button:hover {
 button img {
   width: 30px;
   height: 30px;
+}
+
+
+@media screen and (max-width: 700px) {
+  header {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  header img {
+    display: none;
+  }
+  
+  header .menu {
+    padding-bottom: 40px;
+  }
+
+  main {
+    padding-top: 100px;
+  }
+
+  .search {
+    display: flex;
+    flex-direction: column;
+    padding-top: 0;
+  }
+
+  label {
+    padding-top: 20px;
+  }
+
+  .bottom-main {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .button-search {
+    padding-top: 20px;
+  }
+
+#button-search {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px 80px;
+}
+
+#button-search::after {
+  content: 'Pesquisar';
+}
+
+#button-search img {
+
+  margin-right: 20px;
+  width: 20px;
+  height: 20px;
+}
+
 }
