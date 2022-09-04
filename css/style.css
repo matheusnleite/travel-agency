@@ -257,6 +257,8 @@ span:nth-child(20) {
   border-bottom: 1px solid #4343e9;
     /* background-color: var(--color-button); */
     transition: 0.5s;
+    -webkit-transform: scale(1.3);
+    cursor: pointer;
     
 }
 
