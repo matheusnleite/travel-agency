@@ -294,10 +294,13 @@ span:nth-child(20) {
     justify-content: center;
   }
 
-  .photos h2 {
+  .painel h2 {
     color: var(--color-button);
+    text-align: center;
     border-bottom: 2px solid var(--color-highlight);
+    margin: auto;
     margin-bottom: 30px;
+    width: auto;
   }
 
   
@@ -371,6 +374,29 @@ button img {
   height: 30px;
 } */
 
+#trilha {
+  width: 600px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto; 
+}
+
+#about {
+  display: flex;
+  flex-direction: column;
+  padding-top: 20px;
+  align-items: center;
+}
+
+#about h2 {
+  width: min-content;
+}
+
+#about p {
+  color: black;
+  max-width: 70%;
+  text-align: center;
+}
 
 @media screen and (max-width: 700px) {
   header {
